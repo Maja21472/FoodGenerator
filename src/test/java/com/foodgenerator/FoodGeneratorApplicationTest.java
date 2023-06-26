@@ -9,17 +9,5 @@ public class FoodGeneratorApplicationTest {
         FoodGeneratorResult result = new FoodGeneratorApplicationStrater().start();
         assertThat(result.message()).isEqualTo("Udało się:)");
         assertThat(result.recipe()).isEqualTo("naleśniki");
-
-
-    }
-
-    @Test
-    public void should_return_error_after_giving_morethan5correct_ingredients(){
-        FoodGeneratorResult  start = new FoodGeneratorApplicationStrater().start();
-    }
-
-    @Test
-    public void should_return_error_after_giving_lessthan5correct_ingredients(){
-        FoodGeneratorResult  start = new FoodGeneratorApplicationStrater().start();
     }
 }
