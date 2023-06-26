@@ -1,4 +1,4 @@
 package com.foodgenerator;
 
-record Recipe (String name) {
+public record Recipe (String name) {
 }
